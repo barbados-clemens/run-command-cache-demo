@@ -1,0 +1,23 @@
+{
+  "name": "demo",
+  "nx": {
+    "targets": {
+      "cmd": {
+        "inputs": [
+          "{projectRoot}/package.json"
+        ],
+        "outputs": [
+          "{projectRoot}/test.txt"
+        ],
+        "executor": "nx:run-commands",
+        "cache": true,
+        "options": {
+          "cwd": "packages/demo",
+          "commands": [
+            "echo 'hello' >> test.txt"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -5,6 +5,9 @@
   "scripts": {},
   "private": true,
   "dependencies": {},
+  "workspaces": [
+    "packages/*"
+  ],
   "devDependencies": {
     "@nx/js": "19.3.1",
     "@nx/workspace": "19.3.1",
